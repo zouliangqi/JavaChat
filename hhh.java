@@ -1,5 +1,3 @@
-package lib;
-
 import javax.swing.*;
 import static javax.swing.JFrame.*; //引入JFrame的静态常量
 import java.awt.event.*;
@@ -95,7 +93,7 @@ class MyExtendsJFrame extends JFrame implements ActionListener , Runnable,KeyLis
     JButton j2,j1,j3,j4,j5,buttonSend,buttonkong,buttonFriend;
     JButton[] Friend=new JButton[10];
     JLabel jlabel;
-    ImageIcon qq = new ImageIcon(sqlcon.class.getResource("qq.png"));
+    ImageIcon qq = new ImageIcon(hhh.class.getResource("qq.png"));
     int numberfriend=0;
 
 
@@ -230,7 +228,7 @@ class MyExtendsJFrame extends JFrame implements ActionListener , Runnable,KeyLis
         add(j3);
 
 //      // Icon i=new ImageIcon(".//ren.png");
-        j4=new JButton(new ImageIcon(getClass().getClassLoader().getResource("qq.png")));
+        j4=new JButton(new ImageIcon(getClass().getClassLoader().getResource("ren.png")));
         j4.setBounds(5,125,190,300);
         j4.setFont(font1);
         j4.setBorder(null);
@@ -385,7 +383,7 @@ class MyExtendsJFrame extends JFrame implements ActionListener , Runnable,KeyLis
 
 
 
-class sqlcon{
+class hhh {
     public static void main(String args[]) {
 
         MyExtendsJFrame frame=new MyExtendsJFrame();//创建聊天程序窗口
